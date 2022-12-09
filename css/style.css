@@ -1,0 +1,252 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #121212;
+    background-color: #121212;
+    background-image: url(img/fon.jpg);
+    
+    
+    
+}
+
+/*page=============*/
+.page {
+    margin: auto auto;
+    width: 1100px;
+    height: 55px;
+    background-size: cover;
+}
+/*Header==========*/
+.header {
+    width: 1100px;
+     background: #21201fd0;
+     font-family: COMIC SANS MS;
+     color: #fff;
+     display: table;
+     background: #000;
+     opacity: 0.8;
+     
+}
+
+.header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-brand {
+    font-size: 1.6rem;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 30px;
+}
+
+.header-nav-link {
+    display: inline-block;
+    padding: 10px 40px;
+    display: block;
+    color: #d0d0d0;
+    text-decoration: none;
+    
+    transition: color .2s linear;
+}
+
+.header-nav-link:hover {
+    background-color: #eee;
+}
+.header-logo {
+    display: block;
+    width: 280px;
+    padding: 20px;
+}
+
+.header-nav-link.active {
+    position: relative;
+}
+
+.header-nav-link.active:after {
+    content: "";
+    width: 100%;
+    height: 2px;
+    
+    background-color: #fff;
+    
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+
+
+
+/*btn==========*/
+.btn {
+    width: 1030px;
+    display: inline-block;
+    text-align: center;
+    
+    padding: 11px 35px;
+    
+    font-size: 1rem;
+    line-height: 1.1;
+    color: #fff;
+    font-weight: 900;
+    text-decoration: none;
+    
+    background-color: #2B7DED;
+    border-radius: 5px;
+    
+    transition: background .2s linear;
+}
+.btn:hover {
+    background-color: #1461cd;
+}
+
+
+
+/*Content========*/
+.content {
+    display: table;
+    background: #21201fd0;
+}
+
+.content-title {
+    text-align: center;
+    color: #F5DEB3;
+}
+
+.content-text {
+    line-height: 28px;
+    font-size: 16px;
+    color: #fff;
+    padding: 5px;
+    text-align: justify;
+    margin: 10px;
+    
+}
+
+#gall {
+  position: relative;
+  padding-top: 50%;
+  -moz-user-select: none; user-select: none;
+}
+#gall img {
+  position: absolute;
+  top: 25%;
+  left: 12.5%;
+  max-width: 24.5%;
+  max-height: 49.5%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  cursor: zoom-in;
+  transition: .2s;
+}
+#gall img:nth-child(4n-2) {left: 37.5%;}
+#gall img:nth-child(4n-1) {left: 62.5%;}
+#gall img:nth-child(4n) {left: 87.5%;}
+#gall img:nth-child(n+5) {top: 75%;}
+
+#gall img:focus {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+  max-width: 100%;
+  max-height: 100%;
+  outline: none;
+  pointer-events: none;
+}
+#gall img:focus ~ div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #121212;
+  cursor: zoom-out;
+}
+/*Footer=============*/
+
+.footer {
+    display: inline-table;
+    background: #121212;
+	width: 100%;
+	height: 12px;
+    font-size: 20px;
+    text-align: center;
+    color: #fff;
+   
+    
+}
+
+
+/*Contacts===========*/
+
+.contacts {
+    
+    
+}
+
+.contacts-link {
+    margin-right: 2rem;
+    
+    font-size: 1rem;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+}
+.contacts-link:last-child {
+    margin-right: 0;
+}
+
+.contacts-link:hover {
+    text-decoration: underline;
+}
+
+.contacts-icon {
+    padding: 10px 0 0 0;
+    width: 32px;
+    margin-right: 5px;
+    
+}
+
+
+.form {
+    width: 100px;
+    padding: 15px;
+    margin: auto;
+    
+    background-color: #808080;
+}
+.line {
+    border-left: 5px solid #008000;
+    margin-left: 20px;
+    padding-left: 10px;
+}
+.table {
+    width: 100%;
+    border: 6px solid #000;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+.table th {
+    background-color: #fff;
+   padding: 5px 10px;
+    text-align: left;
+    color: black;
+}
+
+.table td {
+    padding: 5px 10px;
+    border: 3px solid #000;
+}
+
+.table tfoot  td {
+    background-color: #ccc;
+    text-align: right;
+}
+
+
